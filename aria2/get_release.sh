@@ -9,6 +9,11 @@ URL=${URL}/releases/download/${RELEASE}/aria2-${VERSION}
 WINDOWS_EXT="-win-64bit-build1.zip"
 LINUX_EXT=".tar.gz"
 
+EXT=""
 
-wget ${URL}${WINDOWS_EXT}
-wget ${URL}${LINUX_EXT}
+case "$OSTYPE" in
+  msys*) EXT=$WINDOWS_EXT ;;
+  linux*) EXT=$LINUX_EXT ;;
+esac
+
+wget ${URL}${EXT}
