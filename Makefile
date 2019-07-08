@@ -24,6 +24,6 @@ clear-env:
 	@rm -rf $(WORK_FOLDER)
 
 create-env:
-	@mkdir -p $(WORK_FOLDER)/{bin,config}
-	@mkdir -p tmp/
-	@tar zxf release/*.tar.gz -C tmp/
+	@mkdir -p $(WORK_FOLDER)/{bin,config,pipeline,script}
+	#@mkdir -p tmp/
+	#@tar zxf release/*.tar.gz -C tmp/
