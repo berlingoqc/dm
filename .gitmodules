@@ -4,6 +4,3 @@
 [submodule "dm-backend"]
 	path = dm-backend
 	url = https://github.com/berlingoqc/dm-backend
-[submodule "youtube-dl-rpc"]
-	path = youtube-dl-rpc
-	url = https://github.com/berlingoqc/youtube-dl-rpc
